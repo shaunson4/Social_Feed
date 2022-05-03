@@ -6,14 +6,16 @@ function App() {
 
   const [post, setPosts] = useState([{Name:'name'}, {Post: 'postMessage' }])
 
-  function addNewPost( post)
-    let tempPosts = [ post, ...posts];
+  function addNewPost( post) {
+
+    let tempPosts = [ post, ...post];
     setPosts(tempPosts);
+  }
 
   return (
     <div>
-      <DisplayPosts parentPosts={posts} />
       <CreatePosts addNewPostProperty = {addNewPost} />
+     <DisplayPosts parentPosts={post} />
      <h3>Hello World! </h3> 
     </div>
   );

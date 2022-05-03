@@ -1,5 +1,5 @@
-import React  from 'react';
-import Posts from './Components/Posts'
+import React, {useState}  from 'react';
+import Posts from './Posts'
 
 export default function DisplayPosts (){
 
@@ -8,6 +8,9 @@ export default function DisplayPosts (){
     return (
         <div>
             <h2>DisplayPosts</h2>
+            <Posts />
+            <Posts />
+            <Posts />
         </div> 
     )
 }
