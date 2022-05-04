@@ -8,8 +8,8 @@ const CreatePosts = (props) => {
     function handleSubmit (event) {
         event.preventDefault();
         let newPost ={
-            Name: name,
-            Post: postMessage
+            name: name,
+            postInfo: post
         };
         console.log(newPost);
         props.addNewPostProperty(newPost)
@@ -23,7 +23,6 @@ const CreatePosts = (props) => {
             <input type = 'text' value={post} onChange={(event) => setPost (event.target.value)} />
             <button type = 'submit'> Create </button>
         </form>
-
 
 
     );

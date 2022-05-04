@@ -1,10 +1,13 @@
 import React from "react";
+import CreatePosts from "./CreatePosts";
 
-export default function Posts() {
+export default function Posts(props) {
+    
+
   return (
     <div>
-      <p>Name</p>
-      <p>Text</p>
+      <p>Name: {props.name}</p>
+      <p>Post: {props.postInfo}</p>
       <button>LIKE</button>
       <button>DISLIKE</button>
     </div>

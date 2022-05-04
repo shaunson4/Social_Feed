@@ -4,18 +4,18 @@ import CreatePosts from './Components/CreatePosts';
 
 function App() {
 
-  const [post, setPosts] = useState([{Name:'name'}, {Post: 'postMessage' }])
+  const [posts, setPosts] = useState([{name:'' , postInfo: '' }])
 
   function addNewPost( post) {
 
-    let tempPosts = [ post, ...post];
+    let tempPosts = [ post, ...posts];
     setPosts(tempPosts);
   }
 
   return (
     <div>
       <CreatePosts addNewPostProperty = {addNewPost} />
-     <DisplayPosts parentPosts={post} />
+     <DisplayPosts parentPosts={posts} />
      <h3>Hello World! </h3> 
     </div>
   );
