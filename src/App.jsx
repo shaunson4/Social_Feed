@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import DisplayPosts from './Components/DisplayPosts'
-import CreatePosts from './Components/CreatePosts';
+import React, { useState } from "react";
+import DisplayPosts from "./Components/DisplayPosts";
+import CreatePosts from "./Components/CreatePosts";
+import Navbar from "react-bootstrap/Navbar";
+import "../public/app.css";
 
 function App() {
 
@@ -14,9 +16,14 @@ function App() {
 
   return (
     <div>
-      <CreatePosts addNewPostProperty = {addNewPost} />
-     <DisplayPosts parentPosts={posts} />
-     <h3>Hello World! </h3> 
+      <Navbar expand="lg" variant="light" className="color-nav">
+        <Navbar.Brand>Social Media Feed</Navbar.Brand>
+      </Navbar>
+      <div className="container">
+        <CreatePosts addNewPostProperty = {addNewPost} />
+        
+      </div>
+      <DisplayPosts parentPosts={posts} />
     </div>
   );
 }

@@ -1,0 +1,22 @@
+input {
+    display: block;
+}
+input {
+    width: 100%;
+    padding: 1px 8px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #8ebf42;
+    color: white;
+    padding: 2px;
+    border-radius: 4px;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}

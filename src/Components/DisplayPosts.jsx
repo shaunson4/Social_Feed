@@ -1,14 +1,16 @@
-import React, {useState, useEffect}  from 'react';
-import Posts from './Posts'
+import React, {useState, useEffect}  from "react";
+import Posts from "./Posts"
 
 export default function DisplayPosts (props){
 
     return(
         <ul>
-            {props.parentPosts.map( (el) => <Posts name={el.name} postInfo = {el.postInfo}/>   )}
+            {props.parentPosts.map( (el) => (
+            <Posts name={el.name} postInfo = {el.postInfo}/>  
+             ))}
         </ul>
-    )
-    }
+    );
+}
 
 
 
