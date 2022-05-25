@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DisplayPosts from "./Components/DisplayPosts";
 import CreatePosts from "./Components/CreatePosts";
 import Navbar from "react-bootstrap/Navbar";
-import "../public/app.css";
+import "./app.css";
 
 function App() {
 

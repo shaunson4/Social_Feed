@@ -1,7 +1,8 @@
 import React from "react";
 import CreatePosts from "./CreatePosts";
-import "../public/posts.css";
-
+import Likes from "./Likes";
+import DisLikes from "./Dislikes";
+import "./posts.css";
 export default function Posts(props) {
   if (props.name == '') return;
     
@@ -10,8 +11,10 @@ export default function Posts(props) {
     <div class='container'>
       <p>Name: {props.name}</p>
       <p>Post: {props.postInfo}</p>
-      <button>LIKE</button>
-      <button>DISLIKE</button>
+      <div class="grid-container">
+        <Likes class= "grid-child"></Likes>
+        <DisLikes class="grid-child-1"></DisLikes>
+      </div>
     </div>
   );
 }
